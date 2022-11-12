@@ -985,7 +985,7 @@ footer .fot-links a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #fb5f5f;
+  color: #fff;
 }
 .modal .modal-dialog .modal-content .modal-body {
   background-color: #fff;

@@ -50,6 +50,12 @@ h2 {
   width: 80%;
   line-height: 3rem;
 }
+@media only screen and (max-width: 580px) {
+  h2 {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+  }
+}
 h2 span {
   font-weight: 900;
   color: #d03b3b;

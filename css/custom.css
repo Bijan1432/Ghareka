@@ -258,6 +258,7 @@ header .call-btn svg {
   .banner .banner-img {
     padding-left: 2rem;
     margin-top: 2.7rem;
+    display: none;
   }
   .banner .banner-img img {
     height: 75vh;
@@ -394,9 +395,6 @@ header .call-btn svg {
   transition: all 0.3s;
 }
 @media only screen and (max-width: 580px) {
-  .why-choose .wh {
-    height: 320px;
-  }
   .why-choose .wh .line {
     margin-top: 2rem;
   }
@@ -559,6 +557,12 @@ header .call-btn svg {
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
 }
+@media only screen and (max-width: 580px) {
+  .our-work .circle {
+    height: 80px;
+    width: 80px;
+  }
+}
 .our-work .circle::after {
   content: "";
   position: absolute;
@@ -638,6 +642,9 @@ header .call-btn svg {
   background-color: #fb5f5f;
   border-radius: 5p;
   padding: 12px;
+}
+.contact-us .contact-form .btn-submit:hover {
+  background-color: #d03b3b;
 }
 .contact-us .contact-form h3 {
   font-family: "Open Sans";
@@ -748,18 +755,22 @@ footer .fot-links a {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background: #fff;
+  background: #fb5f5f;
+  color: #fff;
   padding: 1rem;
   border-radius: 15px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  max-width: 80%;
 }
 .our-service .serv-block .serv-txt svg {
-  fill: #d03b3b;
+  fill: #fff;
 }
 .our-service .serv-block .serv-txt h3 {
   font-size: 18px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 .our-service .serv-block .serv-txt ul {
   padding: 0;
@@ -769,6 +780,16 @@ footer .fot-links a {
   overflow: hidden;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+@media only screen and (max-width: 580px) {
+  .our-service .serv-block .serv-txt ul {
+    max-height: 25rem;
+  }
+  .our-service .serv-block .serv-txt ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .our-service .serv-block .serv-txt:hover ul {
   max-height: 10rem;
@@ -787,11 +808,6 @@ footer .fot-links a {
   -ms-grid-column-span: 3;
   grid-area: tr-gr;
 }
-@media only screen and (max-width: 580px) {
-  .our-service .serv-2 .serv-block {
-    height: 250px;
-  }
-}
 .our-service .serv-3 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -806,7 +822,7 @@ footer .fot-links a {
 }
 @media only screen and (max-width: 580px) {
   .our-service .serv-4 .serv-block {
-    height: 250px;
+    height: 550px;
   }
 }
 .our-service .gird-section {

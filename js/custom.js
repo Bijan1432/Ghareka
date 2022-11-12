@@ -44,8 +44,8 @@ $('.prose-slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrow: false,
-  autoplay: true,
-  autoplaySpeed: 3000,
+  
+ 
 
 });
 

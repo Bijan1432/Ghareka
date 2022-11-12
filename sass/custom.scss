@@ -275,6 +275,7 @@ header {
         @media only screen and (max-width:580px) {
             padding-left: 2rem;
             margin-top: 2.7rem;
+            display: none;
 
             img {
                 height: 75vh;
@@ -424,13 +425,15 @@ header {
             width: 30%;
             margin-bottom: 0;
             transition: all .3s;
-            
+
         }
+
         @media only screen and (max-width:580px) {
-           
-    height: 320px;
+
+            // height: 320px;
+
             .line {
-               margin-top: 2rem;
+                margin-top: 2rem;
             }
         }
 
@@ -454,6 +457,8 @@ header {
                 }
             }
 
+          
+
             .r-m {
                 color: #fff;
 
@@ -465,11 +470,13 @@ header {
     }
 
     @media only screen and (max-width:580px) {
+       
+
         h3 {
             font-size: 20px !important;
         }
 
-       
+
     }
 }
 
@@ -629,7 +636,10 @@ header {
         z-index: 9;
         right: 4%;
         transform: translate(0, -50%);
-
+        @media only screen and (max-width:580px) {
+            height: 80px;
+            width: 80px;
+        }
         &::after {
 
             content: "";
@@ -711,6 +721,10 @@ header {
             background-color: $secondary-color;
             border-radius: 5p;
             padding: 12px;
+
+            &:hover {
+                background-color: $primary-color;
+            }
         }
 
         h3 {
@@ -825,19 +839,22 @@ footer {
             position: absolute;
             bottom: 20px;
             left: 20px;
-            background: #fff;
+            background: $secondary-color;
+            color: #fff;
             padding: 1rem;
             border-radius: 15px;
             transition: all .3s;
+            max-width: 80%;
 
             svg {
-                fill: $primary-color;
+                fill: #fff;
             }
 
             h3 {
                 font-size: 18px;
                 text-transform: uppercase;
-
+                margin: 0;
+                padding: 0;
             }
 
             ul {
@@ -847,6 +864,14 @@ footer {
                 max-height: 0;
                 overflow: hidden;
                 transition: all .3s;
+
+                @media only screen and (max-width:580px) {
+                    max-height: 25rem;
+
+                    li {
+                        display: flex;
+                    }
+                }
             }
 
             &:hover {
@@ -867,7 +892,7 @@ footer {
 
         @media only screen and (max-width:580px) {
             .serv-block {
-                height: 250px;
+                // height: 250px;
             }
         }
     }
@@ -881,7 +906,7 @@ footer {
 
         @media only screen and (max-width:580px) {
             .serv-block {
-                height: 250px;
+                height: 550px;
             }
         }
     }

@@ -44,8 +44,8 @@ $('.prose-slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrow: false,
-  
- 
+
+
 
 });
 
@@ -71,7 +71,7 @@ $('.r-m').click(function () {
 
 const navLinks = document.querySelectorAll('.nav-item')
 const menuToggle = document.getElementById('navbarsExample04')
-const bsCollapse = new bootstrap.Collapse(menuToggle)
+const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
 navLinks.forEach((l) => {
-    l.addEventListener('click', () => { bsCollapse.toggle() })
+  l.addEventListener('click', () => { bsCollapse.toggle() })
 })

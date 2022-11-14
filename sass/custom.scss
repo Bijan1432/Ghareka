@@ -50,6 +50,11 @@ h2 {
     width: 80%;
     line-height: 3rem;
 
+    @media only screen and (max-width:580px) {
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+    }
+
     span {
         font-weight: 900;
         color: $primary-color;
@@ -129,7 +134,9 @@ p {
 
 }
 
-
+@media screen and (min-width: 600px)  {
+    .mobile-break { display: none; }
+}
 
 
 // ============================
@@ -209,7 +216,7 @@ header {
 
         @media only screen and (max-width:580px) {
 
-            padding-right: 2rem;
+            padding-right: 0rem;
         }
 
         span {
@@ -457,7 +464,7 @@ header {
                 }
             }
 
-          
+
 
             .r-m {
                 color: #fff;
@@ -470,7 +477,7 @@ header {
     }
 
     @media only screen and (max-width:580px) {
-       
+
 
         h3 {
             font-size: 20px !important;
@@ -636,10 +643,12 @@ header {
         z-index: 9;
         right: 4%;
         transform: translate(0, -50%);
+
         @media only screen and (max-width:580px) {
             height: 80px;
             width: 80px;
         }
+
         &::after {
 
             content: "";
@@ -891,9 +900,9 @@ footer {
         grid-area: tr-gr;
 
         @media only screen and (max-width:580px) {
-            .serv-block {
-                // height: 250px;
-            }
+            // .serv-block {
+            //     // height: 250px;
+            // }
         }
     }
 
@@ -1179,3 +1188,106 @@ footer {
 
 //     } 
 // }
+
+//thank you
+
+.thank-you {
+
+    position: relative;
+    background: url(../img/banner-bac.jpg) center/cover;
+    height: 100vh;
+    background-color: #fff5de;
+    text-align: center;
+    z-index: 8;
+
+    .thank {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        h1 {
+            font-size: 10vmax;
+            line-height: 9vmax;
+            font-weight: 600;
+            -webkit-text-stroke: 2px #000;
+            color: #fff;
+            position: relative;
+            @media only screen and (max-width:580px) {
+                font-size: 13vmax;
+            }
+            span {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 50vh;
+                width: 80px;
+                background-color: $primary-color;
+                mix-blend-mode: lighten;
+
+                
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(64%, -31%);
+                    height: 36vh;
+                    width: 71px;
+                    background-color: #9b3232;
+                    mix-blend-mode: lighten;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-157%, -42%);
+                    height: 43vh;
+                    width: 80px;
+                    background-color: #ec5b5b;
+                    mix-blend-mode: lighten;
+                }
+                @media only screen and (max-width:580px) {
+                    height: 33vh;
+                    width: 50px;
+                    &::after {
+                        height: 18vh;
+                        width: 40px;
+                        transform:translate(69%, -9%);
+                    }
+
+                    &::before {
+                        height: 23vh;
+                        width: 45px;
+                        transform:translate(-161%, -29%);
+                    }
+                }
+            }
+        }
+
+        .text-thank {
+            margin-top: 3rem;
+
+            .thank-btn {
+                border-radius: 0;
+                border: none;
+                background-color: $primary-color;
+                color: #fff;
+                font-size: 20px;
+                font-family: 'open-sans';
+
+                &:hover {
+                    background-color: $secondary-color;
+                }
+            }
+        }
+
+    }
+
+
+}

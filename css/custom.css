@@ -128,6 +128,11 @@ p {
   transition: all 0.3s;
 }
 
+@media screen and (min-width: 600px) {
+  .mobile-break {
+    display: none;
+  }
+}
 header {
   -webkit-box-shadow: 0 9px 25px #ebebeb;
           box-shadow: 0 9px 25px #ebebeb;
@@ -202,7 +207,7 @@ header .call-btn svg {
 }
 @media only screen and (max-width: 580px) {
   .banner .home-txt {
-    padding-right: 2rem;
+    padding-right: 0rem;
   }
 }
 .banner .home-txt span {
@@ -1095,4 +1100,101 @@ footer .fot-links a {
   position: absolute;
   -webkit-transform: translate(-20px);
           transform: translate(-20px);
+}
+
+.thank-you {
+  position: relative;
+  background: url(../img/banner-bac.jpg) center/cover;
+  height: 100vh;
+  background-color: #fff5de;
+  text-align: center;
+  z-index: 8;
+}
+.thank-you .thank {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.thank-you .thank h1 {
+  font-size: 10vmax;
+  line-height: 9vmax;
+  font-weight: 600;
+  -webkit-text-stroke: 2px #000;
+  color: #fff;
+  position: relative;
+}
+@media only screen and (max-width: 580px) {
+  .thank-you .thank h1 {
+    font-size: 13vmax;
+  }
+}
+.thank-you .thank h1 span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 50vh;
+  width: 80px;
+  background-color: #d03b3b;
+  mix-blend-mode: lighten;
+}
+.thank-you .thank h1 span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(64%, -31%);
+          transform: translate(64%, -31%);
+  height: 36vh;
+  width: 71px;
+  background-color: #9b3232;
+  mix-blend-mode: lighten;
+}
+.thank-you .thank h1 span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-157%, -42%);
+          transform: translate(-157%, -42%);
+  height: 43vh;
+  width: 80px;
+  background-color: #ec5b5b;
+  mix-blend-mode: lighten;
+}
+@media only screen and (max-width: 580px) {
+  .thank-you .thank h1 span {
+    height: 33vh;
+    width: 50px;
+  }
+  .thank-you .thank h1 span::after {
+    height: 18vh;
+    width: 40px;
+    -webkit-transform: translate(69%, -9%);
+            transform: translate(69%, -9%);
+  }
+  .thank-you .thank h1 span::before {
+    height: 23vh;
+    width: 45px;
+    -webkit-transform: translate(-161%, -29%);
+            transform: translate(-161%, -29%);
+  }
+}
+.thank-you .thank .text-thank {
+  margin-top: 3rem;
+}
+.thank-you .thank .text-thank .thank-btn {
+  border-radius: 0;
+  border: none;
+  background-color: #d03b3b;
+  color: #fff;
+  font-size: 20px;
+  font-family: "open-sans";
+}
+.thank-you .thank .text-thank .thank-btn:hover {
+  background-color: #fb5f5f;
 }

@@ -231,6 +231,7 @@ header .call-btn svg {
   padding-left: 0;
   width: 50vw;
   border-radius: 7px;
+  z-index: 9;
 }
 @media only screen and (max-width: 580px) {
   .banner .home-txt .ban-form form .in-form {
@@ -297,6 +298,7 @@ header .call-btn svg {
   left: 0rem;
   z-index: 5;
   background-color: #fb5f5f;
+  display: none;
 }
 @media only screen and (max-width: 580px) {
   .about .about-img .circle {
@@ -567,6 +569,7 @@ header .call-btn svg {
   right: 4%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
+  display: none;
 }
 @media only screen and (max-width: 580px) {
   .our-work .circle {
@@ -744,6 +747,10 @@ footer .fot-links a {
   letter-spacing: 1px;
 }
 
+.our-service {
+  position: relative;
+  overflow: hidden;
+}
 .our-service .serv-block {
   position: relative;
   height: 400px;

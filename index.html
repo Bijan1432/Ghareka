@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
         integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Aos CSS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
@@ -29,7 +31,8 @@
     <header>
         <nav class="navbar navbar-expand-md py-3" aria-label="Fourth navbar example">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="img/logo.png" class="img-fluid" width="150px" alt=""></a>
+                <a class="navbar-brand" data-aos="fade-up" href="#"><img src="img/logo.png" class="img-fluid"
+                        width="150px" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -42,26 +45,27 @@
                 <div class="collapse navbar-collapse" id="navbarsExample04">
                     <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
+                            <a class="nav-link" href="#home" data-aos="fade-up" data-aos-delay="50">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="#about" data-aos="fade-up" data-aos-delay="100">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
+                            <a class="nav-link" href="#services" data-aos="fade-up" data-aos-delay="150">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#why-us">Why Us</a>
+                            <a class="nav-link" href="#why-us" data-aos="fade-up" data-aos-delay="200">Why Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#vision">Vision</a>
+                            <a class="nav-link" href="#vision" data-aos="fade-up" data-aos-delay="250">Vision</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="#contact" data-aos="fade-up" data-aos-delay="300">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link call-btn" href="tel:18001005353"><svg xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 50 50" height="25" width="25">
+                            <a class="nav-link call-btn" href="tel:18001005353" data-aos="fade-up"
+                                data-aos-delay="350"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+                                    height="25" width="25">
                                     <path
                                         d="M39.75 42q-6.1 0-12.125-3T16.8 31.2Q12 26.4 9 20.375 6 14.35 6 8.25q0-.95.65-1.6Q7.3 6 8.25 6h7q.7 0 1.225.475.525.475.675 1.275l1.35 6.3q.1.7-.025 1.275t-.525.975l-5 5.05q2.8 4.65 6.275 8.1Q22.7 32.9 27.1 35.3l4.75-4.9q.5-.55 1.15-.775.65-.225 1.3-.075l5.95 1.3q.75.15 1.25.75T42 33v6.75q0 .95-.65 1.6-.65.65-1.6.65Zm-28.3-23.4 4.05-4.1L14.35 9H9q0 1.95.6 4.275t1.85 5.325ZM29.9 36.75q2.05.95 4.45 1.55 2.4.6 4.65.7v-5.35l-5.15-1.05ZM11.45 18.6ZM29.9 36.75Z" />
                                 </svg> 18001005353</a>
@@ -82,41 +86,43 @@
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <div class="home-txt">
-                        <h1 class="banner-big-txt">
+                        <h1 class="banner-big-txt" data-aos="fade-up" data-aos-delay="50">
                             Your one-stop
                             home building partner
-                         
+
                         </h1>
-                        <p>
+                        <p data-aos="fade-up" data-aos-delay="100">
                             Your one-stop home building partner.End-to-end partners in constructing your home.
 
                         </p>
                         <div class="ban-form">
                             <form action="mail.php" method="post">
                                 <div class="in-form">
-                                    <div class="in-form-div">
+                                    <div class="in-form-div" data-aos="fade-up" data-aos-delay="150">
                                         <input type="text" class="form-control" id="exampleInputEmail1"
                                             aria-describedby="" placeholder="Your Name*" name="name" required>
                                     </div>
-                                    <div class="in-form-div">
+                                    <div class="in-form-div" data-aos="fade-up" data-aos-delay="200">
                                         <input type="tel" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="" placeholder="Your Mobile*" name="phone"  required>
+                                            aria-describedby="" placeholder="Your Mobile*" name="phone" required>
                                     </div>
-                                    <div class="in-form-div">
+                                    <div class="in-form-div" data-aos="fade-up" data-aos-delay="250">
                                         <input type="text" class="form-control" id="exampleInputEmail1"
                                             aria-describedby="" placeholder="Your Email*" name="email" required>
                                     </div>
-                                    
-                                    <div class="in-form-div">
+
+                                    <div class="in-form-div" data-aos="fade-up" data-aos-delay="300">
                                         <input type="tel" class="form-control" id="exampleInputEmail1"
                                             aria-describedby="" name="message" placeholder="Your message">
                                     </div>
                                 </div>
 
 
+                                <div data-aos="fade-up" data-aos-delay="200">
+                                    <button class="btn-primary" onclick="sendEmail()">ENQUIRE
+                                        NOW</button>
+                                </div>
 
-                                <button class="btn-primary" onclick="sendEmail()">ENQUIRE
-                                    NOW</button>
                             </form>
                         </div>
 
@@ -124,7 +130,7 @@
 
                 </div>
                 <div class="col-md-6 pm-0">
-                    <div class="banner-img">
+                    <div class="banner-img" data-aos="fade-in" data-aos-delay="200">
                         <img src="img/home.jpg" class="img-fluid" alt="">
 
                     </div>
@@ -139,24 +145,24 @@
                 <div class="col-md-6">
                     <div class="about-img">
                         <div class="circle"></div>
-                        <img src="img/home.webp" class="img-fluid" alt="">
+                        <img src="img/home.webp" class="img-fluid" alt="" data-aos="fade-up-right">
                     </div>
                 </div>
                 <div class="col-md-6 mt-4 mt-md-0">
-                    <h2>
+                    <h2 data-aos="fade-up" data-aos-delay="50">
                         GharEka turns your dream home into reality
                     </h2>
-                    <p>
+                    <p data-aos="fade-up" data-aos-delay="100">
                         GharEka is a home construction venture by the Shyam Steel group. A home is the most important
                         asset for a person– one that should last for generations. Hence, it is essential to place the
                         responsibility of building a home in trustworthy hands.
                     </p>
-                    <p>
+                    <p data-aos="fade-up" data-aos-delay="150">
                         Our team of experts assists with drawing the house plans, helping with sanction processes, and
                         finally building the home - all at affordable rates. Our proprietary mobile application gives
                         you real-time updates on every step of your home-building journey.
                     </p>
-                    <div class="d-flex " style="column-gap:1rem;">
+                    <div class="d-flex " style="column-gap:1rem;" data-aos="fade-up" data-aos-delay="200">
                         <button class="btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">ENQUIRE
                             NOW</button>
                         <button class="btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">DOWNLOAD
@@ -205,15 +211,15 @@
 
             <div class="row mb-4">
                 <div class="col-md-8">
-                    <h2>
+                    <h2 data-aos="fade-up" data-aos-delay="50">
                         We give you a 360° service
                     </h2>
-                    <P class="sub-head">
+                    <P class="sub-head" data-aos="fade-up" data-aos-delay="100">
 
                         We are your end-to-end partner for building your home. From designing to building, we make
                         construction reliable, simple and transparent.
                     </P>
-                    <div class="d-flex " style="column-gap:1rem;">
+                    <div class="d-flex " style="column-gap:1rem;" data-aos="fade-up" data-aos-delay="150">
                         <button class="btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">ENQUIRE
                             NOW</button>
                         <button class="btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">DOWNLOAD
@@ -225,10 +231,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="gird-section">
-                        <div class="serv-1">
+                        <div class="serv-1" data-aos="fade-right" data-aos-delay="50">
                             <div class="serv-block">
                                 <img src="img/plans.webp" class="img-fluid" alt="">
-                                <div class="serv-txt">
+                                <div class="serv-txt" data-aos="fade-right" data-aos-delay="150">
                                     <h3>All drawings</h3>
                                     <ul>
                                         <li><svg xmlns="http://www.w3.org/2000/svg" height="28" width="28"
@@ -255,10 +261,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="serv-2">
+                        <div class="serv-2" data-aos="fade-down" data-aos-delay="50">
                             <div class="serv-block">
                                 <img src="img/serv-1.webp" class="img-fluid" alt="">
-                                <div class="serv-txt">
+                                <div class="serv-txt" data-aos="fade-down" data-aos-delay="150">
                                     <h3>Plans and approval</h3>
                                     <ul>
                                         <li class="d-flex"><svg xmlns="http://www.w3.org/2000/svg" height="28"
@@ -270,26 +276,26 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="serv-3">
+                        <div class="serv-3" data-aos="fade-up" data-aos-delay="50">
                             <div class="serv-block">
                                 <img src="img/material.jpg" class="img-fluid" alt="">
-                                <div class="serv-txt">
+                                <div class="serv-txt" data-aos="fade-up" data-aos-delay="150">
                                     <h3>Procurement of all materials</h3>
                                     <ul>
                                         <li class="d-flex"><svg xmlns="http://www.w3.org/2000/svg" height="28"
                                                 width="28" viewbox="0 0 50 50">
                                                 <path
                                                     d="M18.9 35.7 7.7 24.5l2.15-2.15 9.05 9.05 19.2-19.2 2.15 2.15Z" />
-                                            </svg>We are eager to help you in every aspect of construction</li>
+                                            </svg>We source the best materials needed to build your house</li>
 
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="serv-4">
+                        <div class="serv-4" data-aos="fade-left" data-aos-delay="50">
                             <div class="serv-block">
                                 <img src="img/serv-4.jpg" class="img-fluid" alt="">
-                                <div class="serv-txt">
+                                <div class="serv-txt" data-aos="fade-left" data-aos-delay="150">
                                     <h3>All construction works</h3>
                                     <ul>
                                         <li><svg xmlns="http://www.w3.org/2000/svg" height="28" width="28"
@@ -336,18 +342,18 @@
             </div>
 
     </section>
-    
+
     <section class="why-choose p-top p-bot" id="why-us">
         <div class="container">
             <div class="row mb-4">
                 <div class="col-md-12">
-                    <h2>
+                    <h2 data-aos="fade-up" data-aos-delay="50">
                         Why choose GharEka
                     </h2>
-                    <P class="sub-head">
+                    <P class="sub-head" data-aos="fade-up" data-aos-delay="100">
                         Flawless house construction with deep expertise and peace of mind.
                     </P>
-                    <div class="d-flex " style="column-gap:1rem;">
+                    <div class="d-flex " style="column-gap:1rem;" data-aos="fade-up" data-aos-delay="150">
                         <button class="btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">ENQUIRE
                             NOW</button>
                         <button class="btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">DOWNLOAD
@@ -358,7 +364,7 @@
             </div>
             <div class="row">
                 <div class="col-md-3  col-6">
-                    <div class="wh">
+                    <div class="wh" data-aos="fade-up" data-aos-delay="50">
                         <h3>Trust</h3>
 
                         <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" height="48" width="48"
@@ -386,7 +392,7 @@
                         <p class="show-hide">
                             GharEka is a venture by Shyam Steel Group, one of India’s leading industrial houses, with a
                             legacy of almost 7 decades. We ensure our services live up to the reliability and quality of
-                            Shyam Steel, a name trusted by millions of customers across India.
+                            Shyam Steel.
                         </p>
 
                         <button class="r-m">Read More <svg xmlns="http://www.w3.org/2000/svg" height="28" width="28"
@@ -396,7 +402,7 @@
                     </div>
                 </div>
                 <div class="col-md-3  col-6">
-                    <div class="wh">
+                    <div class="wh" data-aos="fade-up" data-aos-delay="100">
                         <h3>Affordability</h3>
 
                         <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="48" width="48">
@@ -431,7 +437,7 @@
                     </div>
                 </div>
                 <div class="col-md-3  col-6">
-                    <div class="wh">
+                    <div class="wh" data-aos="fade-up" data-aos-delay="150">
                         <h3>The Dream Team</h3>
 
                         <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="48" width="48">
@@ -469,7 +475,7 @@
                 </div>
 
                 <div class="col-md-3  col-6">
-                    <div class="wh">
+                    <div class="wh" data-aos="fade-up" data-aos-delay="200">
                         <h3>Cost Transparency</h3>
 
                         <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" height="48" width="48">
@@ -504,7 +510,7 @@
                     </div>
                 </div>
                 <div class="col-md-3  col-6">
-                    <div class="wh">
+                    <div class="wh" data-aos="fade-up" data-aos-delay="150">
                         <h3>Accurate Timeline</h3>
 
                         <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" height="48" width="48">
@@ -539,7 +545,7 @@
                     </div>
                 </div>
                 <div class="col-md-3  col-6">
-                    <div class="wh">
+                    <div class="wh" data-aos="fade-up" data-aos-delay="200">
                         <h3>Superior <br class="mobile-break"> Quality</h3>
 
                         <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" height="48" width="48">
@@ -574,7 +580,7 @@
                     </div>
                 </div>
                 <div class="col-md-3  col-6">
-                    <div class="wh">
+                    <div class="wh" data-aos="fade-up" data-aos-delay="250">
                         <h3>App Based Tracking</h3>
 
                         <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" height="48" width="48">
@@ -611,7 +617,7 @@
                     </div>
                 </div>
                 <div class="col-md-3  col-6">
-                    <div class="wh">
+                    <div class="wh" data-aos="fade-up" data-aos-delay="300">
                         <h3>Best <br class="mobile-break">Practices</h3>
 
                         <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" height="48" width="48">
@@ -654,15 +660,15 @@
         <div class="container">
             <div class="row mb-4">
                 <div class="col-md-8">
-                    <h2>
+                    <h2 data-aos="fade-up" data-aos-delay="50">
                         We take care of all the challenges
                     </h2>
-                    <P class="sub-head">
+                    <P class="sub-head" data-aos="fade-up" data-aos-delay="100">
                         At GharEka, we understand that building a home is a big life decision and requires a significant
                         investment of time and savings. However, the journey to build this dream home can be
                         challenging:
                     </P>
-                    <div class="d-flex " style="column-gap:1rem;">
+                    <div class="d-flex " style="column-gap:1rem;" data-aos="fade-up" data-aos-delay="150">
                         <button class="btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">ENQUIRE
                             NOW</button>
                         <button class="btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">DOWNLOAD
@@ -676,7 +682,7 @@
                     <div class="slider-process">
                         <div class="proses-slider">
                             <div class="flex-box">
-                                <div class="card">
+                                <div class="card"  data-aos="fade-up" data-aos-delay="50">
                                     <div class="big-no">
                                         1
                                     </div>
@@ -699,8 +705,8 @@
                                     <!-- <div class="card-back"></div> -->
                                 </div>
                             </div>
-                            <div class="flex-box">
-                                <div class="card">
+                            <div class="flex-box" >
+                                <div class="card"  data-aos="fade-up" data-aos-delay="100">
                                     <div class="big-no">
                                         2
                                     </div>
@@ -724,7 +730,7 @@
                                 </div>
                             </div>
                             <div class="flex-box">
-                                <div class="card">
+                                <div class="card"  data-aos="fade-up" data-aos-delay="150">
                                     <div class="big-no">
                                         3
                                     </div>
@@ -746,7 +752,7 @@
                                 </div>
                             </div>
                             <div class="flex-box">
-                                <div class="card">
+                                <div class="card"  data-aos="fade-up" data-aos-delay="200">
                                     <div class="big-no">
                                         4
                                     </div>
@@ -766,8 +772,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex-box">
-                                <div class="card">
+                            <div class="flex-box" >
+                                <div class="card"  data-aos="fade-up" data-aos-delay="250">
                                     <div class="big-no">
                                         5
                                     </div>
@@ -804,13 +810,13 @@
         <div class="container">
             <div class="row mb-4">
                 <div class="col-md-12">
-                    <h2>
+                    <h2 data-aos="fade-up" data-aos-delay="50">
                         Our vision for your house
                     </h2>
-                    <P class="sub-head">
+                    <P class="sub-head" data-aos="fade-up" data-aos-delay="100">
                         Flawless house construction with deep expertise and peace of mind.
                     </P>
-                    <div class="d-flex " style="column-gap:1rem;">
+                    <div class="d-flex " style="column-gap:1rem;" data-aos="fade-up" data-aos-delay="150">
                         <button class="btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">ENQUIRE
                             NOW</button>
                         <button class="btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">DOWNLOAD
@@ -821,9 +827,9 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid ">
+        <div class="container-fluid " data-aos="fade-up" data-aos-delay="150">
             <div class="row mt-5 mt-md-0">
-                <div class="col-md-11 offset-md-1  p-0 ps-4">
+                <div class="col-md-11 offset-md-1  ps-md-0 ps-4">
                     <div class="circle">
 
                     </div>
@@ -847,16 +853,17 @@
     <section class="contact-us" id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5 pt-0 pt-md-4">
 
-                    <h2>
+                    <h2 data-aos="fade-up" data-aos-delay="50">
                         GET IN TOUCH
                     </h2>
-                    <p>It is a simple and effortless process to begin your journey with us. From designing to building,
+                    <p data-aos="fade-up" data-aos-delay="100">It is a simple and effortless process to begin your
+                        journey with us. From designing to building,
                         we make construction reliable, simple and transparent.</p>
 
                     <ul>
-                        <li class="con-li">
+                        <li class="con-li" data-aos="fade-up" data-aos-delay="150">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="28" width="28">
                                 <path
                                     d="M39.75 42q-6.1 0-12.125-3T16.8 31.2Q12 26.4 9 20.375 6 14.35 6 8.25q0-.95.65-1.6Q7.3 6 8.25 6h7q.7 0 1.225.475.525.475.675 1.275l1.35 6.3q.1.7-.025 1.275t-.525.975l-5 5.05q2.8 4.65 6.275 8.1Q22.7 32.9 27.1 35.3l4.75-4.9q.5-.55 1.15-.775.65-.225 1.3-.075l5.95 1.3q.75.15 1.25.75T42 33v6.75q0 .95-.65 1.6-.65.65-1.6.65Zm-28.3-23.4 4.05-4.1L14.35 9H9q0 1.95.6 4.275t1.85 5.325ZM29.9 36.75q2.05.95 4.45 1.55 2.4.6 4.65.7v-5.35l-5.15-1.05ZM11.45 18.6ZM29.9 36.75Z">
@@ -864,7 +871,7 @@
                             </svg>
                             <a href="tel:18001005353">18001005353</a>
                         </li>
-                        <li class="con-li">
+                        <li class="con-li" data-aos="fade-up" data-aos-delay="200">
                             <svg xmlns="http://www.w3.org/2000/svg" height="28" width="28" viewbox="0 0 50 50">
                                 <path
                                     d="M7 40q-1.2 0-2.1-.9Q4 38.2 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.2 0 2.1.9.9.9.9 2.1v26q0 1.2-.9 2.1-.9.9-2.1.9Zm17-15.1L7 13.75V37h34V13.75Zm0-3L40.8 11H7.25ZM7 13.75V11v26Z" />
@@ -885,28 +892,31 @@
                 </div>
                 <div class="col-md-6 offset-md-1">
                     <div class="contact-form">
-                        <h3>We’d love to hear from you.</h3>
+                        <h3 data-aos="fade-up" data-aos-delay="50">We’d love to hear from you.</h3>
                         <form action="mail.php" method="post">
-                            <div class="mb-3">
-                                <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="" placeholder="Enter Your Name*" name="name" required>
+                            <div class="mb-3" data-aos="fade-up" data-aos-delay="100">
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby=""
+                                    placeholder="Enter Your Name*" name="name" required>
                             </div>
-                            <div class="mb-3">
-                                <input type="tel" class="form-control" id="exampleInputEmail2"
-                                    aria-describedby="" placeholder="Enter Your Mobile Number*" name="phone" required>
+                            <div class="mb-3" data-aos="fade-up" data-aos-delay="150">
+                                <input type="tel" class="form-control" id="exampleInputEmail2" aria-describedby=""
+                                    placeholder="Enter Your Mobile Number*" name="phone" required>
                             </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" id="exampleInputEmail3"
-                                    aria-describedby="" placeholder="Enter Your Email*" name="email" required>
+                            <div class="mb-3" data-aos="fade-up" data-aos-delay="200">
+                                <input type="email" class="form-control" id="exampleInputEmail3" aria-describedby=""
+                                    placeholder="Enter Your Email*" name="email" required>
                             </div>
-                            <div class="mb-3">
-                                <textarea class="form-control" id="" rows="5" width="100"
-                                    placeholder="We listen Your Every words" name="message"></textarea>
+                            <div class="mb-3" data-aos="fade-up" data-aos-delay="250">
+                                <textarea class="form-control" id="" rows="3" width="100" placeholder="Your Message"
+                                    name="message"></textarea>
 
                             </div>
+                            <div data-aos="fade-up" data-aos-delay="250">
 
-                            <button type="submit" class="btn btn-submit" onclick="sendEmail()">SUBMIT</button>
-                            <button type="submit" class="btn btn-submit mt-3" onclick="sendEmail()">DOWNLOAD BROCHURE</button>
+                                <button type="submit" class="btn btn-submit" onclick="sendEmail()">SUBMIT</button>
+                                <button type="submit" class="btn btn-submit mt-3" onclick="sendEmail()">DOWNLOAD
+                                    BROCHURE</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -919,27 +929,29 @@
         <div class="container">
             <div class="row pb-3">
                 <div class="col-md-12">
-                    <h3 class="">GHAREKA</h3>
+                    <h3 class="" data-aos="fade-up" data-aos-delay="50">GHAREKA</h3>
                 </div>
             </div>
             <div class="row align-items-center">
                 <div class="col-md-5">
 
-                    <p>Founded by Late Sri Shriram Beriwal in 1953, Shyam Steel Group is a business conglomerate
+                    <p data-aos="fade-up" data-aos-delay="100">Founded by Late Sri Shriram Beriwal in 1953, Shyam Steel
+                        Group is a business conglomerate
                         operating in India. With a net worth of 30 billion INR, Shyam Steel is one of India’s leading
                         manufacturers of TMT rebars. From an early foray into TMT rebars to staying abreast of the
                         latest technologies, the Shyam Steel group today has a strong presence across diverse
                         industries.</p>
                 </div>
                 <div class="col-md-4">
-                    <h4 class="pb-2">About Us</h4>
-                    <p>GharEka is a home construction venture for anyone looking to build their homes on their own land.
+                    <h4 class="pb-2" data-aos="fade-up" data-aos-delay="100">About Us</h4>
+                    <p data-aos="fade-up" data-aos-delay="150">GharEka is a home construction venture for anyone looking
+                        to build their homes on their own land.
                         We are an end-to-end partner for building a home, including planning, designing and actually
                         constructing the house.</p>
                 </div>
                 <div class="col-md-3">
                     <div class="social">
-                        <a href="https://www.facebook.com/ghareka.official/">
+                        <a href="https://www.facebook.com/ghareka.official/" data-aos="fade-up" data-aos-delay="50">
 
                             <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" height="28" width="28"
                                 viewBox="0 0 24 24">
@@ -947,12 +959,13 @@
                                     d="M15.12,5.32H17V2.14A26.11,26.11,0,0,0,14.26,2C11.54,2,9.68,3.66,9.68,6.7V9.32H6.61v3.56H9.68V22h3.68V12.88h3.06l.46-3.56H13.36V7.05C13.36,6,13.64,5.32,15.12,5.32Z" />
                             </svg>
                         </a>
-                        <a href="https://www.instagram.com/ghareka.official"> <svg xmlns="http://www.w3.org/2000/svg"
-                                height="28" width="28" data-name="Layer 1" viewBox="0 0 24 24">
+                        <a href="https://www.instagram.com/ghareka.official" data-aos="fade-up" data-aos-delay="100">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="28" width="28" data-name="Layer 1"
+                                viewBox="0 0 24 24">
                                 <path
                                     d="M17.34,5.46h0a1.2,1.2,0,1,0,1.2,1.2A1.2,1.2,0,0,0,17.34,5.46Zm4.6,2.42a7.59,7.59,0,0,0-.46-2.43,4.94,4.94,0,0,0-1.16-1.77,4.7,4.7,0,0,0-1.77-1.15,7.3,7.3,0,0,0-2.43-.47C15.06,2,14.72,2,12,2s-3.06,0-4.12.06a7.3,7.3,0,0,0-2.43.47A4.78,4.78,0,0,0,3.68,3.68,4.7,4.7,0,0,0,2.53,5.45a7.3,7.3,0,0,0-.47,2.43C2,8.94,2,9.28,2,12s0,3.06.06,4.12a7.3,7.3,0,0,0,.47,2.43,4.7,4.7,0,0,0,1.15,1.77,4.78,4.78,0,0,0,1.77,1.15,7.3,7.3,0,0,0,2.43.47C8.94,22,9.28,22,12,22s3.06,0,4.12-.06a7.3,7.3,0,0,0,2.43-.47,4.7,4.7,0,0,0,1.77-1.15,4.85,4.85,0,0,0,1.16-1.77,7.59,7.59,0,0,0,.46-2.43c0-1.06.06-1.4.06-4.12S22,8.94,21.94,7.88ZM20.14,16a5.61,5.61,0,0,1-.34,1.86,3.06,3.06,0,0,1-.75,1.15,3.19,3.19,0,0,1-1.15.75,5.61,5.61,0,0,1-1.86.34c-1,.05-1.37.06-4,.06s-3,0-4-.06A5.73,5.73,0,0,1,6.1,19.8,3.27,3.27,0,0,1,5,19.05a3,3,0,0,1-.74-1.15A5.54,5.54,0,0,1,3.86,16c0-1-.06-1.37-.06-4s0-3,.06-4A5.54,5.54,0,0,1,4.21,6.1,3,3,0,0,1,5,5,3.14,3.14,0,0,1,6.1,4.2,5.73,5.73,0,0,1,8,3.86c1,0,1.37-.06,4-.06s3,0,4,.06a5.61,5.61,0,0,1,1.86.34A3.06,3.06,0,0,1,19.05,5,3.06,3.06,0,0,1,19.8,6.1,5.61,5.61,0,0,1,20.14,8c.05,1,.06,1.37.06,4S20.19,15,20.14,16ZM12,6.87A5.13,5.13,0,1,0,17.14,12,5.12,5.12,0,0,0,12,6.87Zm0,8.46A3.33,3.33,0,1,1,15.33,12,3.33,3.33,0,0,1,12,15.33Z" />
                             </svg></a>
-                        <a href="https://twitter.com/GharekaOfficial">
+                        <a href="https://twitter.com/GharekaOfficial" data-aos="fade-up" data-aos-delay="150">
                             <svg xmlns="http://www.w3.org/2000/svg" height="28" width="28" data-name="Layer 1"
                                 viewBox="0 0 24 24">
                                 <path
@@ -1063,6 +1076,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Aos js  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 600,
+            offset: 50
+
+        });
+    </script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
 </body>
